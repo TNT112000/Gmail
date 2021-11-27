@@ -1,0 +1,16 @@
+Thành viện:
+-Trần Ngọc Tuyền
+-Lương Thành Đạt
+
+Mục tiêu :
+-Xây dựng giao diện người dùng và trang quản lý
+
+Các bước thực hiện 
+-Trang web mẫu : Gmail
+-Xây dựng trang chủ Gmail
+-Xây dựng trang chi tiết
+-Xây dựng trang quản lý
+
+Phân công công việc
+-Trần Ngọc Tuyền :
+-Lương Thành Đạt :
