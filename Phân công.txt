@@ -3,7 +3,7 @@ Thành viện:
 -Lương Thành Đạt
 
 Mục tiêu :
--Xây dựng giao diện người dùng và trang quản lý
+-Xây dựng giao diện người dùng và trang quản lý Gmail
 
 Các bước thực hiện 
 -Trang web mẫu : Gmail
@@ -12,5 +12,5 @@ Các bước thực hiện
 -Xây dựng trang quản lý
 
 Phân công công việc
--Trần Ngọc Tuyền :
--Lương Thành Đạt :
+-Trần Ngọc Tuyền :trang QUản lý, trang Chi tiết (Phần Nội dung)
+-Lương Thành Đạt :Trang chủ, trang Chi tiết (Phần header,sidebar)
