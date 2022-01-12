@@ -142,7 +142,6 @@ html, body {
 	overflow: hidden;
 	box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
 		0 1px 3px 1px rgba(60, 64, 67, 0.149);
-	transition: box-shadow 150ms ease;
 	flex: 0 1 145px;
 }
 .sidebar-btn-create:hover {
@@ -337,7 +336,7 @@ html, body {
 	width: 20px;
 	border-radius: 0;
 }
-.btn-lg {
+.btn-list-gmail {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -348,17 +347,20 @@ html, body {
 	cursor: pointer;
 	padding: 0 2px;
 }
-.inbox-menu-page {
+.list-menu-page {
 	color: #5f6368;
 	font-size: 0.75rem;
 	margin-right: 12px;
 	margin: 0 6px;
 }
-.inbox-menu-page-btn {
+.btn-list-gmail:hover {
+	background-color: rgb(235, 235, 235);
+}
+.list-menu-page-btn {
 	display: flex;
 	align-items: center;
 }
-.inbox-menu-page-btn .btn-page {
+.list-menu-page-btn .btn-page {
 	margin: 0;
 }
 .btn-menu {
@@ -367,7 +369,48 @@ html, body {
 	margin-left: -3px;
 	outline: none;
 }
-.inbox-container {
+.list-email-container {
 	display: flex;
 	flex-flow: column;
+}
+.list-category {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 56px;
+	color: #5f6368;
+	font-weight: 500;
+	font-size: 0.875rem;
+	white-space: nowrap;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	margin-right: 16px;
+}
+.list-category-title {
+	margin-right: 18px;
+	padding: 0;
+}
+.list-category-icon {
+	margin-left: 16px;
+	margin-right: 12px;
+}
+.list-category-item:hover {
+	background-color: #3c404314;
+	color: #202124;
+}
+.list-category-item-active {
+	color: #d93025;
+	border-bottom: 4px solid red;
+}
+.list-category-icon-active {
+	fill: red;
+}
+.list-category-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 56px;
+	cursor: pointer;
+	flex: 0 1 251px;
 }
