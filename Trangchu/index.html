@@ -4,19 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/home.css">
     <title>Gmail</title>
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <div id="header">
-        <div class="h-left">
-            <span class="material-icons">
-                menu
-            </span>
-        </div>
-        <div class="h-search"></div>
-        <div class="h-right"></div>   
+    <div class="body-wrapper">
+        <!--header-->
+        <header class="header">
+            <div class="header-left">
+                <div class="icons">
+                    <button id="header-menu" class="btn header-menu">
+                        <img src="./img/menu.svg" alt="" class="btn-icon btn-icon-alt">
+                    </button>
+                </div>
+                <a href="#" class="header-logo">
+                    <img src="./img/logo_gmail_lockup_default_1x_r2.png" alt="Gmail">
+                </a>
+            </div>
+            <form class="header-search" action="">
+                <div class="icons">
+                    <button class="btn">
+                        <img src="./img/search.svg" alt="" class="btn-icon btn-icon-alt">
+                    </button>
+                </div>    
+                <input type="search" class="header-search-input" placeholder="Tìm kiếm trong thư">
+                <div class="icons">
+                    <button class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"></path></svg>
+                    </button>
+                </div>
+            </form>
+            <div class="header-right">
+                <div class="icons">
+                    <button class="btn">
+                        <img src="./img/help.svg" alt="" class="btn-icon btn-icon-alt">
+                    </button>
+                </div>
+                <div class="icons">
+                    <button class="btn">
+                        <img src="./img/settings.svg" alt="" class="btn-icon btn-icon-alt">
+                    </button>
+                </div>
+                <div class="icons">
+                    <button class="btn">
+                        <img src="./img/apps.svg" alt="" class="btn-icon btn-icon-alt">
+                    </button>
+                </div>
+                <div class="icons">
+                    <button id="header-user" class="btn">
+                        <img src="./img/user.png" alt="" class="btn-icon icon-user">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!--left-->
+        
     </div>
 </body>
 </html>
