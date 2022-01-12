@@ -40,6 +40,11 @@ html, body {
 .btn:hover {
 	background-color: #3c404314;
 }
+.btn-icon-mn {
+	height: 20px;
+	width: 20px;
+	border-radius: 0;
+}
 /*header*/
 .header {
     display: grid;
@@ -86,7 +91,6 @@ html, body {
 }
 .header-search-input {
 	display: block;
-	font-family: 'Google Sans', 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: calc(14 / 1rem);
 	font-weight: 400;
 	background-color: transparent;
@@ -150,7 +154,6 @@ html, body {
 }
 .sidebar-btn-create-title {
 	color: #3c4043;
-	font-family: 'Google Sans', 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 0.875rem;
 	font-weight: 500;
 	margin-left: 8px;
@@ -174,7 +177,6 @@ html, body {
 	align-items: center;
 	justify-content: space-between;
 	color: rgb(0, 0, 0);
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 0.875rem;
 	line-height: 1.1rem;
 	min-height: 32px;
@@ -209,7 +211,6 @@ html, body {
 	opacity: 1;
 }
 .category-title {
-	font-family: 'Google Sans', 'Roboto', Arial, Helvetica, sans-serif;
 	color: #3c4043;
 	font-size: 0.875rem;
 	font-weight: 500;
@@ -249,11 +250,7 @@ html, body {
 	opacity: 0.18;
 	cursor: row-resize;
 }
-.hangouts .category-title {
-	margin-top: 18px;
-}
 .category-item-btn {
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 0.875rem;
 	padding: 0 12px 0 26px;
 }
@@ -270,6 +267,9 @@ html, body {
 	padding: 5px 16px;
 	cursor: pointer;
 }
+.sidebar-btn-lg:hover {
+	background-color: #6098ff;
+}
 .category-img {
 	height: 72px;
 	margin-top: 16px;
@@ -278,7 +278,6 @@ html, body {
 }
 .connect-info {
 	font-size: 0.75rem;
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	text-align: center;
 	margin-top: 14px;
 	padding: 0 12px 0 26px;
@@ -291,26 +290,84 @@ html, body {
 	color: #427fed;
 	text-decoration: none;
 }
-.btn-sidebar {
+/*main-body*/
+.list-email {
+	grid-column: 2 / 3;
+	grid-row: 2 / -1;
+	overflow: hidden;
+}
+.list-menu {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 48px;
+	width: auto;
+	background-color: white;
+	padding: 0 12px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-right: 16px;
+}
+.list-menu-group {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+.list-btn-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
-	height: 32px;
-	width: 36px;
-	margin: 0;
+}
+.btn-list-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background: none;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	padding: 0 4px;
+}
+.btn-icon-menu {
+	height: 20px;
+	width: 20px;
 	border-radius: 0;
 }
-.btn-sidebar:hover {
-	background-color: white;
+.btn-lg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	background: none;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	padding: 0 2px;
 }
-.btn-sidebar-active {
-	background-color: white;
-	opacity: 1;
-	box-shadow: inset 0 0 4px 2px rgb(102 102 102 / 15%);
+.inbox-menu-page {
+	color: #5f6368;
+	font-size: 0.75rem;
+	margin-right: 12px;
+	margin: 0 6px;
 }
-.btn-icon-sidebar.btn-icon-sm {
-	opacity: 0.54;
-	height: 16px;
-	width: 16px;
+.inbox-menu-page-btn {
+	display: flex;
+	align-items: center;
 }
-.btn-icon-sidebar.btn-icon-sm-active {
-	opacity: 1;
+.inbox-menu-page-btn .btn-page {
+	margin: 0;
+}
+.btn-menu {
+	width: 18px;
+	padding: 0;
+	margin-left: -3px;
+	outline: none;
+}
+.inbox-container {
+	display: flex;
+	flex-flow: column;
 }
