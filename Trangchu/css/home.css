@@ -107,12 +107,13 @@ html, body {
 .apps {
 	position: absolute;
 	width: 314px;
-	height: 450px;
+	height: 400px;
 	background-color: whitesmoke;
-	right: 8px;
+	right: 10px;
 	border-radius: 8px;
 	z-index: 5;
 	display: none;
+	margin-top: 10px;
 }
 .connect-apps {
 	display: flex;
@@ -125,7 +126,7 @@ html, body {
 }
 .link-app-img {
 	width: 96px;
-	height: 96px;
+	height: 90px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -399,9 +400,15 @@ html, body {
 .option-item-dsb {
 	color:#ccc;
 	cursor:default;
+	padding:1px;
 }
-.option-item-active:hover {
+.option-item:hover {
 	background-color: #ccc;
+	width: 100%;
+}
+.option-item .option-item-dsb:hover {
+	background-color:rgb(253, 253, 253);
+	cursor:default;
 }
 .btn-list-gmail:hover .page-select {
 	display: block;

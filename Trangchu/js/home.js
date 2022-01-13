@@ -23,5 +23,10 @@ document.getElementById("btn-green").onclick = function() {
     document.getElementById("btn-blue").style.borderBottomColor = "white";
 }
 document.getElementById("btn-more-app").onclick = function() {
+    document.getElementById("btn-more-app").style.backgroundColor = "#3c404314";
     document.getElementById("apps").style.display = "block";
+}
+document.getElementById("btn-more-app").ondblclick = function() {
+    document.getElementById("btn-more-app").style.backgroundColor = "white";
+    document.getElementById("apps").style.display = "none";
 }
