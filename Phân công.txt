@@ -8,9 +8,8 @@ Mục tiêu :
 Các bước thực hiện 
 -Trang web mẫu : Gmail
 -Xây dựng trang chủ Gmail
--Xây dựng trang chi tiết
 -Xây dựng trang quản lý
 
 Phân công công việc
--Trần Ngọc Tuyền :trang QUản lý, trang Chi tiết (Phần Nội dung)
--Lương Thành Đạt :Trang chủ, trang Chi tiết (Phần header,sidebar)
+-Trần Ngọc Tuyền :trang QUản lý,
+-Lương Thành Đạt :Trang chủ, 
