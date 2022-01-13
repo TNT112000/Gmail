@@ -18,6 +18,7 @@ document.getElementById('btn1').addEventListener("click", function () {
     for (var i = 0; i < innerText.length; i++) {
         if (innerText[i].style.display === "none") {
             innerText[i].style.display = "block";
+
             document.getElementById('sidebar').style.width="240px";
             document.getElementById('content').style.marginLeft="240px";
         }
@@ -34,5 +35,21 @@ document.getElementById('sidebar').addEventListener("click",function(){
         innerText[i].style.display = "block";
         document.getElementById('sidebar').style.width="240px";
         document.getElementById('content').style.marginLeft="240px"
+    }
+})
+
+document.getElementById('tb').addEventListener("click",function(){
+    var content = document.getElementsByClassName("content");
+    for (var i = 0 ; i < content.length;i++){
+        content[i].style.display="none";
+        content[1].style.display="block";
+    }
+})
+
+document.getElementById('tq').addEventListener("click",function(){
+    var content = document.getElementsByClassName("content");
+    for (var i = 0 ; i < content.length;i++){
+        content[i].style.display="none";
+        content[0].style.display="block";
     }
 })
