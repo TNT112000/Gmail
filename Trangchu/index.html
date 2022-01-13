@@ -46,9 +46,86 @@
                     </button>
                 </div>
                 <div class="icons">
-                    <button class="btn">
+                    <button class="btn" id="btn-more-app">
                         <img src="./img/apps.svg" alt="" class="btn-icon">
                     </button>
+                    <div class="apps" id="apps">
+                      <div class="connect-apps">
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/user-link.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Tài khoản</p>
+                          </div>
+                        </div>
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/db.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Danh bạ</p>
+                          </div>
+                        </div><div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/youtube.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Youtube</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="connect-apps">
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/gmail.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Gmail</p>
+                          </div>
+                        </div>
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/logo-gg.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Tìm kiếm</p>
+                          </div>
+                        </div><div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/gg-drive.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Drive</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="connect-apps">
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/calendar.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Lịch</p>
+                          </div>
+                        </div>
+                        <div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/gg-trans.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Dịch</p>
+                          </div>
+                        </div><div class="link-apps">
+                          <div class="link-app-img">
+                            <img src="./img/gg-image.png" alt="" class="img-link">
+                          </div>
+                          <div class="link-app-text">
+                            <p class="link-text">Ảnh</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>  
                 </div>
                 <div class="icons">
                     <button id="header-user" class="btn">
@@ -187,6 +264,16 @@
                 <div class="list-menu-page">
                   1-50 trong số 1000
                 </div>
+                <div class="page-select">
+                  <ul class="page-select-option">
+                    <li class="option-item">
+                      <p class="option-item-dsb">Mới nhất</p>
+                    </li>
+                    <li class="option-item">
+                      <p class="option-item-active">Cũ nhất</p>
+                    </li>
+                  </ul>
+                </div>
               </button>
               <div class="list-menu-page-btn">
                 <button class="btn btn-page">
@@ -209,15 +296,15 @@
           <div class="list-email-container">
             <div class="list-category">
               <div id="btn-active" class="list-category-item list-category-item-active">
-                <svg class="list-category-icon btn-icon btn-icon-menu list-category-icon-active" style="opacity: 0.54;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"/></svg>
+                <svg class="list-category-icon btn-icon btn-icon-menu list-category-icon-active" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"/></svg>
                 <span class="list-category-title">Chính</span>
               </div>
               <div id="btn-blue" class="list-category-item list-category-item-blue">
-                <svg  class="list-category-icon btn-icon btn-icon-menu list-category-icon-blue" style="opacity: 0.54;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <svg  class="list-category-icon btn-icon btn-icon-menu list-category-icon-blue" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
                 <span class="list-category-title">Mạng xã hội</span>
               </div>
               <div id="btn-green" class="list-category-item list-category-item-green">
-                <svg  class="list-category-icon btn-icon btn-icon-menu list-category-icon-green" style="opacity: 0.54;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
+                <svg  class="list-category-icon btn-icon btn-icon-menu list-category-icon-green" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
                 <span class="list-category-title">Quảng cáo</span>
               </div>
             </div>
