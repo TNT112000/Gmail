@@ -35,7 +35,6 @@ html, body {
 	height: 24px;
 	border: none;
 	border-radius: 999px;
-    opacity: 0.54;
 }
 .btn:hover {
 	background-color: #3c404314;
@@ -732,4 +731,28 @@ html, body {
 }
 .footer-text-sm {
 	font-size: 0.75rem;
+}
+/*right*/
+.app-container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-left: 1px solid #e5e5e5;
+	grid-column: 3 / 4;
+	grid-row: 2 / -1;
+}
+.app-item {
+	margin-bottom: 16px;
+}
+.app-group > :nth-last-child(3) {
+	margin-bottom: 0;
+}
+.app-group > :nth-last-child(1) {
+	margin-top: 6px;
+}
+.seperator-right:hover {
+	background-color: white;
+	cursor: default;
 }
