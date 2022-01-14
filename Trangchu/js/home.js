@@ -1,6 +1,10 @@
 var btn1 = document.getElementById("btn-active");
 var btn2 = document.getElementById("btn-blue");
 var btn3 = document.getElementById("btn-green");
+var cnt = document.getElementById("content");
+var cntw = document.getElementById("content-two");
+var cntt = document.getElementById("content-three");
+var lmt = document.getElementById("list-menu-text");
 
 btn1.onclick = function() {
     btn2.style.color = "#5f6368";
@@ -9,6 +13,10 @@ btn1.onclick = function() {
     btn3.style.borderBottomColor = "white";
     btn1.style.color = "red";
     btn1.style.borderBottomColor = "red";
+    cntw.style.display = "none";
+    cntt.style.display = "none";
+    cnt.style.display = "block";
+    lmt.innerHTML= "1-50 trong số 1000";
 }
 btn2.onclick = function() {
     btn3.style.color = "#5f6368";
@@ -17,6 +25,10 @@ btn2.onclick = function() {
     btn1.style.borderBottomColor = "white";
     btn2.style.color = "blue";
     btn2.style.borderBottomColor = "blue";
+    cntw.style.display = "block";
+    cntt.style.display = "none";
+    cnt.style.display = "none";
+    lmt.innerHTML= "1-50 trong số 2000";
 }
 btn3.onclick = function() {
     btn3.style.color = "green";
@@ -25,6 +37,10 @@ btn3.onclick = function() {
     btn1.style.borderBottomColor = "white";
     btn2.style.color = "#5f6368";
     btn2.style.borderBottomColor = "white";
+    cntw.style.display = "none";
+    cntt.style.display = "block";
+    cnt.style.display = "none";
+    lmt.innerHTML= "1-50 trong số 3000";
 }
 
 var btn_app = document.getElementById("btn-more-app");
