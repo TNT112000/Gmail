@@ -1,3 +1,26 @@
+var btn_app = document.getElementById("btn-more-app");
+var apps = document.getElementById("apps");
+
+btn_app.onclick = function() {
+    btn_app.style.backgroundColor = "#3c404314";
+    apps.style.display = "block";
+}
+btn_app.ondblclick = function() {
+    btn_app.style.backgroundColor = "white";
+    apps.style.display = "none";
+}
+
+var btn_tick = document.getElementById("btn-tick");
+var tick_mail = document.getElementById("tick-mail");
+
+btn_tick.onclick = function() {
+    btn_tick.style.backgroundColor = "#3c404314";
+    tick_mail.style.display = "block";
+}
+btn_tick.ondblclick = function() {
+    btn_tick.style.backgroundColor = "white";
+    tick_mail.style.display = "none";
+}
 var btn1 = document.getElementById("btn-active");
 var btn2 = document.getElementById("btn-blue");
 var btn3 = document.getElementById("btn-green");
@@ -43,26 +66,3 @@ btn3.onclick = function() {
     lmt.innerHTML= "1-50 trong số 3000";
 }
 
-var btn_app = document.getElementById("btn-more-app");
-var apps = document.getElementById("apps");
-
-btn_app.onclick = function() {
-    btn_app.style.backgroundColor = "#3c404314";
-    apps.style.display = "block";
-}
-btn_app.ondblclick = function() {
-    btn_app.style.backgroundColor = "white";
-    apps.style.display = "none";
-}
-
-var btn_tick = document.getElementById("btn-tick");
-var tick_mail = document.getElementById("tick-mail");
-
-btn_tick.onclick = function() {
-    btn_tick.style.backgroundColor = "#3c404314";
-    tick_mail.style.display = "block";
-}
-btn_tick.ondblclick = function() {
-    btn_tick.style.backgroundColor = "white";
-    tick_mail.style.display = "none";
-}
