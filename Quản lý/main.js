@@ -86,3 +86,20 @@ document.getElementById('click-tk1').addEventListener("click", function () {
         content[4].style.display = "block";
     }
 })
+
+document.getElementById('bd').addEventListener("click", function () {
+    var content = document.getElementsByClassName("content");
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+        content[5].style.display = "block";
+    }
+})
+
+document.getElementById('st').addEventListener("click",function(){
+    document.getElementById('editer-1').style.display="block";
+})
+
+document.getElementById('btn-x').addEventListener("click",function(){
+    document.getElementById('editer-1').style.display="none";
+})
+

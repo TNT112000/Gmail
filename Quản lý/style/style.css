@@ -79,6 +79,7 @@
     margin-left: 20px;
 }
 .header-sing-in-1{
+    position: relative;
     width:140px;
     height: 40px;
     display: flex;
@@ -124,6 +125,7 @@
     font-weight: 700;
 }
 .header-sing-in-menu{
+    position: relative;
     cursor:pointer;
     width:60px ;
     height: 40px;
@@ -419,7 +421,8 @@
 }
 .table-list1{
     width: 40px;
-    
+    display: flex;
+    justify-content: center;
 }
 .table-list2{
     width: 40px;
@@ -433,11 +436,11 @@
 }
 .table-list5{
     width: 190px;
-    
+    text-align: right;
 }
 
 table.dataTable tbody th, table.dataTable tbody td {
-     padding: 0px 0px;
+    padding: 0px 0px;
 }
 table.dataTable{
     width: unset;
@@ -463,9 +466,218 @@ table.dataTable{
     background-color: white !important;
 }
 
-.hover-tr.hover{
+.hover-tr:hover{
     background-color: #f0f0f0 !important;
 }
+.center-star{
+    display: flex !important;
+    justify-content: center;
+}
+.table-user1{
+    width: 160px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user2{
+    width: 100px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user3{
+    width: 100px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user4{
+    width: 200px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user5{
+    width: 180px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user7{
+    width: 180px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-user6{
+    width: 180px;
+    padding: 5px !important;
+    text-align: center;
+}
+.header-logo-hover{
+
+}
+.tb-list{
+    position: absolute;
+    z-index: 100;
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    top:40px;
+    right: 10px;
+    overflow:auto;
+    display: none;
+}
+.tb-list-item-link{
+    height: 50px;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid;
+}
+
+.name-item-list{
+    font-weight: 700;
+}
+
+.tb-list-item-link1{
+    font-weight: 700;
+}
+
+.tb-list-item-link2{
+    line-height: 25px;
+    display:-webkit-box;
+    -webkit-box-orient:vertical ;
+    -webkit-line-clamp:1 ;
+    overflow: hidden;
+    width: 300px;
+}
+.tb-list-item-link3{
+    width: 100px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.tb-list-item-box-link{
+    display: flex;
+    align-items: center;
+}
+.header-sing-in-menu:hover .tb-list{
+    display: block;
+}
+.dataTables_wrapper {
+    position: unset;
+}
+
+.header-sing-in-set:hover .tb-list2{
+    display: block;
+}
+
+.header-sing-in-set{
+    position: relative;
+}
+
+.tb-list2{
+    display: none;
+    z-index: 100;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    top:40px;
+    right: 10px;
+    overflow:auto;
+    border: 1px solid;
+}
+
+.icons-ud{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.tb-list2-2{
+    display: flex;
+    align-items: center;
+}
+.row {
+    margin-left: 0px !important; 
+    margin-right: 0px !important;
+}
+
+.admin-list{
+    width: 140px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid red;
+    text-align: center;
+    top: 39px;
+    z-index: 100;
+    display: none;
+}
+
+.admin-list-item{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid red;
+    
+}
+
+.header-sing-in-1:hover .admin-list{
+    display: block;
+}
+
+.editer-1{
+    display: none;
+    width: 600px;
+    z-index: 90;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+.input-title-text{
+    height: 30px;
+    width: 600px;
+    padding:  0 20px;
+}
+.input-email-text{
+    height: 30px;
+    width: 600px;
+    padding:  0 20px;
+}
+
+.btn-width{
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0 40px 0 0;
+    border: 1px solid red;
+}
+
+.btn-x{
+    height: 30px;
+    background-color: red;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0 40px 0 0;
+    border: 1px solid red;
+}
+
+.btn-sub{
+    width: 60px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.btn-del{
+    width: 60px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.icon-x{
+    color: white;
+    font-size: 28px;
+}
+
+
 
 
  
