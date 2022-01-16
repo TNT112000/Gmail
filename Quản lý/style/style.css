@@ -114,10 +114,7 @@
     height: 40px;
     
 }
-.header-search-2:hover{
-    background-color: var(--hover--color);
-    cursor: pointer;
-}
+
 .header-logo-link{
     display: flex;
     justify-content: center;
@@ -259,7 +256,6 @@
     height: 0;
 }
 .content{
-    height: calc( 100vh - 56px);
     margin-top: 56px;
     margin-left: 240px;
 }
@@ -388,12 +384,88 @@
     background-color: red;
 }
 
+ /* Content1 */
+
 .content1{
     display: none;
 }
+.content2{
+    display: none;
+}
 
+.content3{
+    display: none;
+}
 
+.mail-tb{
+    display: flex;
+    align-items: center;
+}
+.ok-ok{
+    overflow-y: scroll;
+}
+.ok{
+    width: 500px;
+    height: 700px;
+    background-color: yellow;
+}
 
+.table-list4{
+    display:-webkit-box;
+    -webkit-box-orient:vertical ;
+    -webkit-line-clamp:1 ;
+    overflow: hidden;
+    line-height: 36.2px;
+}
+.table-list1{
+    width: 40px;
+    
+}
+.table-list2{
+    width: 40px;
+    
+}
+.table-list3{
+    width: 210px;
+}
+.table-list4{
+    width: 740px;
+}
+.table-list5{
+    width: 190px;
+    
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+     padding: 0px 0px;
+}
+table.dataTable{
+    width: unset;
+}
+
+.padding-i{
+    margin: 0 10px;
+}
+
+.table-list5i{
+    display: none;
+    width: 100%;
+}
+
+.hover-tr:hover .table-list5i{
+    display: block;
+}
+.hover-tr:hover .table-list5t{
+    display: none;
+}
+
+.hover-tr{
+    background-color: white !important;
+}
+
+.hover-tr.hover{
+    background-color: #f0f0f0 !important;
+}
 
 
  
