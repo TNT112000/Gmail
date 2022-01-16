@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" class="">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css" class="">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table1').DataTable();
+        });
+
+        $(document).ready(function () {
+            $('#table2').DataTable();
+        });
+
+        $(document).ready(function () {
+            $('#table3').DataTable();
+        });
+        $(document).ready(function () {
+            $('#table4').DataTable();
+        });
+    </script>
+    <div class="main">
+        <div class="header">
+            <div class="header-left">
+                <div id="btn1" class="header-logo-1">
+                    <i class="header-logo-icon-1 fas fa-bars"></i>
+                </div>
+                <div class="header-logo-2">
+                    <a href="" class="header-logo-link">
+                        <img class="gb_rc"
+                            src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png"
+                            srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png 2x "
+                            alt="" aria-hidden="true" style="width:109px;height:40px">
+                    </a>
+                </div>
+            </div>
+            <div class="header-search">
+                <div class="header-search-1">
+                    <div class="header-search-2">
+                        <i class="header-search-icon fas fa-search"></i>
+                    </div>
+                    <input type="text" class="header-search-input" placeholder="Tìm Kiếm">
+                </div>
+            </div>
+            <div class="header-sing-in">
+                <div class="header-sing-in-menu">
+                    <i class="header-set-logo header-logo-hover far fa-bell"></i>
+                    <div class="tb-list">
+                        <ul class="tb-list1">
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                            <li class="tb-list-item-link">
+                                <div class="tb-list-item-link1">Trần Ngọc Tuyền</div>
+                                <div class="tb-list-item-box-link">
+                                    <div class="tb-list-item-link2">Gửi Gmail tài khoản có vấn đề trục trực xin vui lòng
+                                        khắc phục xin cảm ơn</div>
+                                    <div class="tb-list-item-link3">12/12/2000</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-sing-in-set">
+                    <i class="header-set-logo fas fa-ellipsis-v"></i>
+                    <div class="tb-list2">
+                        <div class="gird wide">
+                            <div class="tb-list2-2 row">
+                                <div class="col l-2">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" class="icons-ud"
+                                        alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hangouts_icon.svg/1768px-Hangouts_icon.svg.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" class="icons-ud"
+                                        alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hangouts_icon.svg/1768px-Hangouts_icon.svg.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" class="icons-ud"
+                                        alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://banner2.cleanpng.com/20180423/gkw/kisspng-google-logo-logo-logo-5ade7dc753b015.9317679115245306313428.jpg"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="data:image/png;base64,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"
+                                        class="icons-ud" alt="">
+                                </div>
+                                <div class="col l-2">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hangouts_icon.svg/1768px-Hangouts_icon.svg.png"
+                                        class="icons-ud" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header-sing-in-1">
+                    <i class="header-sing-in-icon far fa-user-circle"></i>
+                    <div class="sign-in">Admin</div>
+                    <div class="admin-list">
+                        <div class="admin-list-item">Cài đặt</div>
+                        <div class="admin-list-item">Đăng xuất</div>
+                        <div class="admin-list-item">Chính sách</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-list">
+                <div class="sidebar-list-item">
+                    <a id="st" class="sidebar-list-item-link sidebar-list-item-link-max">
+                        <i class="sidebar-icon fas fa-plus"></i>
+                        <p class="sidebar-title sidebar-title-max">Soạn thư</p>
+                    </a>
+                </div>
+                <div id="tq" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon fas fa-house-user"></i>
+                        <p class="sidebar-title">Tổng quan</p>
+                    </a>
+                </div>
+                <div id="tb" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon far fa-envelope-open"></i>
+                        <p class="sidebar-title">Thông báo</p>
+                    </a>
+                </div>
+                <div id="ph" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon far fa-comment-dots"></i>
+                        <p class="sidebar-title">Phản hồi</p>
+                    </a>
+                </div>
+                <div id="all" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon far fa-envelope"></i>
+                        <p class="sidebar-title">Tất cả thư</p>
+                    </a>
+                </div>
+                <div id="tk" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon far fa-user"></i>
+                        <p class="sidebar-title">Tài khoản</p>
+                    </a>
+                </div>
+                <div id="click-tk1" class=" sidebar-list-item sidebar-list-item-no sidebar-list-item-mini">
+                    <a class="sidebar-list-item-link">
+                        <p class="sidebar-title">Quyền quản trị</p>
+                    </a>
+                </div>
+                <div id="click-tk2" class="click-tk sidebar-list-item sidebar-list-item-no sidebar-list-item-mini">
+                    <a class="sidebar-list-item-link">
+                        <p class="sidebar-title">Người dùng</p>
+                    </a>
+                </div>
+                <div class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon far fa-compass"></i>
+                        <p class="sidebar-title">Các tiện tích</p>
+                    </a>
+                </div>
+                <div id="bd" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon fas fa-chart-bar"></i>
+                        <p class="sidebar-title">Biểu đồ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content content0">
+            <div class="gird wide ">
+                <p class="title-content">Trang chủ</p>
+                <div class="row content-content">
+                    <div class="col l-4  ">
+                        <div class="box-content box-color1">Số người dùng</div>
+                    </div>
+                    <div class="col l-4">
+                        <div class=" box-content box-color2">Quản trị</div>
+                    </div>
+                    <div class="col l-4">
+                        <div class=" box-content box-color3">Doanh thu tháng</div>
+                    </div>
+                    <div class="col l-4">
+                        <div class=" box-content box-color4">Doanh thu năm</div>
+                    </div>
+                    <div class="col l-4">
+                        <div class=" box-content box-color5">Tỷ lệ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content content1">
+            <div class="gird wide ">
+                <p class="title-content">Thông báo</p>
+                <div class="row content-content ok-ok">
+                    <div class="col l-12  ">
+                        <table id="table2" class="display">
+                            <thead>
+                                <th>
+                                </th>
+                                <th>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content content2">
+            <div class="gird wide ">
+                <p class="title-content">Phản hồi</p>
+                <div class="row content-content ok-ok">
+                    <div class="col l-12  ">
+                        <table id="table1" class="display">
+                            <thead>
+                                <th>
+                                </th>
+                                <th>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Tranngoctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Vodanh12</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Khongten1234</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content content3">
+            <div class="gird wide ">
+                <p class="title-content">Tất cả thư</p>
+                <div class="row content-content ok-ok">
+                    <div class="col l-12  ">
+                        <table id="table3" class="display">
+                            <thead>
+                                <th>
+                                </th>
+                                <th>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Tranngoctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Vodanh12</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Khongten1234</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="content content2">
+        <div class="gird wide ">
+            <p class="title-content">Quản trị viên</p>
+            <div class="row content-content ok-ok">
+                <div class="col l-12  ">
+                    <table id="table4" class="display">
+                        <thead>
+                            <th>
+                                Họ và Tên
+                            </th>
+                            <th>
+                                Ngày sinh
+                            </th>
+                            <th>SĐT</th>
+                            <th>Quản lý</th>
+                            <th>Tên tài khoản</th>
+                            <th>Nơi sinh/Quốc Tịch </th>
+                            <th>Email</th>
+                        </thead>
+                        <tbody>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Trần Ngọc Tuyền</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                </td>
+                                <td class="table-user5">
+
+                                </td>
+                                <td class="table-user6">
+
+                                </td>
+                                <td class="table-user7"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="content content3">
+        <div class="gird wide ">
+            <p class="title-content">Biểu đồ</p>
+            <div class="row content-content">
+                <div class="col l-4  ">
+                    <div class="box-content box-color1">Số người dùng</div>
+                </div>
+                <div class="col l-4">
+                    <div class=" box-content box-color2">Quản trị</div>
+                </div>
+                <div class="col l-4">
+                    <div class=" box-content box-color3">Doanh thu tháng</div>
+                </div>
+                <div class="col l-4">
+                    <div class=" box-content box-color4">Doanh thu năm</div>
+                </div>
+                <div class="col l-4">
+                    <div class=" box-content box-color5">Tỷ lệ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editer-1" class="editer-1">
+        <form action="'">
+            <div id="btn-x" class="btn-x"><i class="icon-x fas fa-times"></i></div>
+            <textarea name="editor1">
+            </textarea>
+            <input type="text" class="input-title-text" placeholder="Chủ đề">
+            <input type="email" class="input-email-text" placeholder="Gửi">
+            <div class="btn-width">
+                <button type="submit" class="btn-sub">Gửi</button>
+                <button type="submit" class="btn-del">Xóa</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+    </div>
+    <script src="main.js"></script>
+
+
+
+</html>
