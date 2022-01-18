@@ -42,7 +42,7 @@ document.getElementById('sidebar').addEventListener("click", function () {
         document.getElementById('sidebar').style.width = "240px";
     }
     var marginLeft = document.getElementsByClassName('content')
-    for (var i=0; i < marginLeft.length; i++) {
+    for (var i = 0; i < marginLeft.length; i++) {
         marginLeft[i].style.marginLeft = "240px";
     }
 })
@@ -95,11 +95,42 @@ document.getElementById('bd').addEventListener("click", function () {
     }
 })
 
-document.getElementById('st').addEventListener("click",function(){
-    document.getElementById('editer-1').style.display="block";
+document.getElementById('st').addEventListener("click", function () {
+    document.getElementById('editer-1').style.display = "block";
 })
 
-document.getElementById('btn-x').addEventListener("click",function(){
-    document.getElementById('editer-1').style.display="none";
+document.getElementById('btn-x').addEventListener("click", function () {
+    document.getElementById('editer-1').style.display = "none";
 })
 
+document.getElementById('nv').addEventListener("click", function () {
+    var content = document.getElementsByClassName("content");
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+        content[6].style.display = "block";
+    }
+})
+
+
+const labels = ['1','2','3','4','5','6','7','8','9','10','11','12',];
+
+const data = {
+    labels: labels,
+    datasets: [{
+        label: 'Đơn vị Nghìn Đô',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [100,300, 200,400,600,500,700,900,800,1000,2000],
+    }]
+};
+
+const config = {
+    type: 'line',
+    data: data,
+    options: {}
+};
+     
+        const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+        );

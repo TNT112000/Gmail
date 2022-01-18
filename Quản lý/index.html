@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="grid.css" class="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
 
@@ -31,6 +32,12 @@
         });
         $(document).ready(function () {
             $('#table4').DataTable();
+        });
+        $(document).ready(function () {
+            $('#table5').DataTable();
+        });
+        $(document).ready(function () {
+            $('#table6').DataTable();
         });
     </script>
     <div class="main">
@@ -285,16 +292,16 @@
                         <p class="sidebar-title">Người dùng</p>
                     </a>
                 </div>
-                <div class="sidebar-list-item">
-                    <a class="sidebar-list-item-link">
-                        <i class="sidebar-icon far fa-compass"></i>
-                        <p class="sidebar-title">Các tiện tích</p>
-                    </a>
-                </div>
                 <div id="bd" class="sidebar-list-item">
                     <a class="sidebar-list-item-link">
                         <i class="sidebar-icon fas fa-chart-bar"></i>
                         <p class="sidebar-title">Biểu đồ</p>
+                    </a>
+                </div>
+                <div id="nv" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon fas fa-history"></i>
+                        <p class="sidebar-title">Nhiệm vụ</p>
                     </a>
                 </div>
             </div>
@@ -669,16 +676,41 @@
                                 </td>
                                 <td class="table-user3">0972612200</td>
                                 <td class="table-user4">
+                                    Quản lý Tổng
                                 </td>
                                 <td class="table-user5">
-
+                                    NT0972612200
                                 </td>
                                 <td class="table-user6">
-
+                                    Hà Nội-Việt Nam
                                 </td>
-                                <td class="table-user7"></td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
                             </tr>
-
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -689,44 +721,139 @@
         <div class="gird wide ">
             <p class="title-content">Biểu đồ</p>
             <div class="row content-content">
-                <div class="col l-4  ">
-                    <div class="box-content box-color1">Số người dùng</div>
+                <div class="col l-6  ">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-6">
                     <div class=" box-content box-color2">Quản trị</div>
-                </div>
-                <div class="col l-4">
-                    <div class=" box-content box-color3">Doanh thu tháng</div>
-                </div>
-                <div class="col l-4">
-                    <div class=" box-content box-color4">Doanh thu năm</div>
-                </div>
-                <div class="col l-4">
-                    <div class=" box-content box-color5">Tỷ lệ</div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="editer-1" class="editer-1">
-        <form action="'">
-            <div id="btn-x" class="btn-x"><i class="icon-x fas fa-times"></i></div>
-            <textarea name="editor1">
-            </textarea>
-            <input type="text" class="input-title-text" placeholder="Chủ đề">
-            <input type="email" class="input-email-text" placeholder="Gửi">
-            <div class="btn-width">
-                <button type="submit" class="btn-sub">Gửi</button>
-                <button type="submit" class="btn-del">Xóa</button>
+    <div id="content" class="content content4">
+        <div class="gird wide ">
+            <p class="title-content">Nhiệm vụ</p>
+            <div class="row content-content ok-ok">
+                <div class="col l-8  ">
+                    <h2 class="title-item-nv">Nhiệm vụ được giao</h2>
+                    <table id="table5" class="display">
+                        <thead>
+                            <th>
+                                Nhiệm vụ
+                            </th>
+                            <th>
+                                Ngày
+                            </th>
+                            <th>Được giao</th>
+                            <th class="">Trạng thái</th>
+
+                        </thead>
+                        <tbody>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col l-4  ">
+                    <div class="ct-box">
+                        <h2 class="title-item-nv">Chi tiết</h2>
+                        <p class="content-item-nv">Xây dựng tính năng chat bao gồm các tiện ích đầy đủ chỉnh sửa được phông chữ và đính kèm link , đường dẫn , hình ảnh và các tệp tin , icon đa dạng đặc biệt . Về màu sắc màu sắc sáng dễ nhìn dễ tiếp cận cho mọi lứa tuổi</p>
+                        <button class="btn-nv1">Chỉnh sửa</button>
+                        <button class="btn-nv2">Xóa</button>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
-    <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('editor1');
-    </script>
+        <div id="editer-1" class="editer-1">
+            <form action="'">
+                <div id="btn-x" class="btn-x"><i class="icon-x fas fa-times"></i></div>
+                <textarea name="editor1">
+            </textarea>
+                <input type="text" class="input-title-text" placeholder="Chủ đề">
+                <input type="email" class="input-email-text" placeholder="Gửi">
+                <div class="btn-width">
+                    <button type="submit" class="btn-sub">Gửi</button>
+                    <button type="submit" class="btn-del">Xóa</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace('editor1');
+        </script>
     </div>
     <script src="main.js"></script>
-
-
-
+      
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>

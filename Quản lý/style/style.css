@@ -24,7 +24,7 @@
     padding: 0 16px;
     position: fixed;
     width: 100%;
-    z-index: 100px;
+    z-index: 100;
     background-color: white;
     border: 1px solid #f1f1f1;
 }
@@ -367,7 +367,7 @@
 .content-content{
     display: flex;
     margin-top: 30px;
-    align-items: center;
+    
     width: 100%;
 }
 .box-color1{
@@ -676,8 +676,73 @@ table.dataTable{
     color: white;
     font-size: 28px;
 }
+.content4{
+    display: none;
+}
+.ct-box{
+    position: relative;
+    border-radius: 20px;
+    height: 500px;
+    border: 1px solid red;
+}
 
+.title-item-nv{
+    padding: 20px ;
 
+}
+.table-nv1{
+    width: 450px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-nv2{
+    width: 100px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-nv3{
+    width: 150px;
+    padding: 5px !important;
+    text-align: center;
+}
+.table-nv4{
+    width: 80px;
+    padding: 5px !important;
+    text-align: center;
+}
+.content-item-nv{
+    
+    padding: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
 
+.btn-nv1{
+    width: 130px;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    border: red;
+    bottom: 30px;
+    right: 50%;
+    text-align: center;
+    margin: 0 10px;
+}
 
- 
+.btn-nv2{
+    width: 130px;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    border: red;
+    bottom: 30px;
+    left: 50%;
+    text-align: center;
+    margin: 0 10px;
+}
