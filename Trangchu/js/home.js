@@ -66,3 +66,13 @@ btn3.onclick = function() {
     lmt.innerHTML= "1-50 trong số 3000";
 }
 
+var create = document.getElementById("create-email");
+var form = document.getElementById("email-form");
+var close_form = document.getElementById("close");
+
+create.onclick = function() {
+    form.style.display = "block";
+}
+close_form.onclick = function() {
+    form.style.display = "none";
+}

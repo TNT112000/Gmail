@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 </head>
 <body>
     <div class="body-wrapper">
@@ -137,10 +138,66 @@
         <!--left-->
         <section class="left-sidebar">
             <div class="left-sidebar-create">
-              <button class="sidebar-btn-create">
+              <button class="sidebar-btn-create" id="create-email">
                 <img src="./img/create.png" alt="" class="sidebar-btn-create-icon">
                 <span class="sidebar-btn-create-title">Soạn thư</span>
               </button>
+              <div class="email-form" id="email-form">
+                <div class="header-form">
+                  <div class="menu-form">
+                    <div class="title-form">
+                      <span>Thư mới</span>
+                    </div>
+                    <div class="icon-menu-form">
+                      <div class="icon-form-item">
+                        <i class="fas fa-minus icon-form" style="padding-left: 6px; padding-top: 4px;"></i>
+                      </div>
+                      <div class="icon-form-item">
+                        <i class="fas fa-expand-alt icon-form" style="padding-left: 6px; padding-top: 4px;"></i>
+                      </div>
+                      <div class="icon-form-item" id="close">
+                        <i class="fas fa-times icon-form" style="padding-left: 6px; padding-top: 4px;"></i>
+                      </div>                                         
+                    </div>
+                  </div>
+                </div>
+                <div class="body-form">
+                  <div class="body-new-email">
+                    <div class="new-email-content">
+                      <form class="mail-send" name="send">
+                        <span style="padding-right: 5px;color: rgb(145, 145, 145);" class="link-user">Đến</span>
+                        <input type="text" class="user-send" id="email-value">
+                        <span style="padding-right: 6px; color: rgb(145, 145, 145);" class="link-user">Cc</span>
+                        <span style="padding-right: 11px; color: rgb(145, 145, 145);" class="link-user">Bcc</span>
+                      </form>
+                      <form class="title-mail-send" name="title">
+                        <input type="text" class="title-send" placeholder="Chủ đề" id="title-send">
+                      </form>
+                      <form class="content-mail-send" name="content">
+                        <textarea class="content-send" id="content-send"></textarea>
+                        <div class="group-btn-select">
+                          <div class="btn-option">
+                            <div class="btn-send">
+                              <button type="submit" value="submit" class="send">
+                                <span style="padding-right: 20px; font-size: 1rem; color: white">Gửi</span>
+                                <i class="fas fa-caret-down" style="color: white;"></i>
+                              </button>
+                            </div>
+                            <div class="icon-option">
+                              <div class="btn-icon-option">
+                                <img src="./img/more.png" alt="" class="btn-io" style="opacity: 0.54;">
+                              </div>
+                              <div class="btn-icon-option">
+                                <img src="./img/delete.svg" alt="" class="btn-io-2" style="opacity: 0.54;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="left-siderbar-label">
               <ul class="labels category-item-list">
@@ -237,7 +294,7 @@
                   </div>
                 </div>
               </div>
-            </section>
+          
         </section>
         <!--main-body-->
         <section class="list-email" >
@@ -2501,7 +2558,7 @@
               </footer>
             </div>       
             </div>
-          </div>    
+          </div> 
         </section>
         <!--right--->
         <section class="app-container" >
