@@ -138,24 +138,14 @@ const myChart = new Chart(
 
 // So sánh các năm
 
-const config1 = {
-    type: 'bar',
-    data: data1,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    },
-  };
 
-  const labels1 = Utils.months({count: 7});
+
+  const labels1 = ['2016','2017','2018','2019','2021','2021']
 const data1 = {
   labels: labels1,
   datasets: [{
-    label: 'My First Dataset',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    label: 'Đơn vị Nghìn Đô',
+    data: [100, 300, 200, 400, 600, 500, 700, 900, 800, 1000, 2000],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
       'rgba(255, 159, 64, 0.2)',
@@ -178,7 +168,19 @@ const data1 = {
   }]
 };
 
+const config1 = {
+    type: 'bar',
+    data: data1,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    },
+  };
+var Element1 = document.getElementById('myChart1');
 const myChart1 = new Chart(
-    document.getElementById('myChart1'),
+    Element1,
     config1
 );

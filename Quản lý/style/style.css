@@ -260,6 +260,7 @@
 .content{
     margin-top: 56px;
     margin-left: 240px;
+    margin-bottom: 100px;
 }
 .category-list-all{
     text-decoration: none;
@@ -424,10 +425,11 @@
     display: flex;
     justify-content: center;
 }
+
 .table-list2{
     width: 40px;
-    
 }
+
 .table-list3{
     max-width: 170px;
     width: 170px;
@@ -924,5 +926,38 @@ table.dataTable{
     padding: 20px 10px;
     border-radius: 30px;
     box-shadow: 1px 1px 1px 1px #f1f1f1;
-    border: 1px solid #f1f1f1;
+    border: 3px solid #f1f1f1;
+}
+
+.margin-char{
+    margin-top: 100px;
+}
+
+.box-shadow-chart{
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    border-radius: 20px ;
+    border: 3px solid #f1f1f1;
+}
+
+.marginChar1{
+    margin: 0px 0px 0px 60px;
+}
+
+.tb-list{
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    border-radius: 5px ;
+    border: 3px solid #f1f1f1;
+}
+
+.tb-list-item-link{
+    border: unset;
+}
+
+.tb-list-item-link:hover {
+    background-color: #f1f1f1;
+}
+.tb-list2{
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    border-radius: 20px ;
+    border: 3px solid #f1f1f1;
 }
