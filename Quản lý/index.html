@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="jqvmap-master/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" class="">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/base.css">
@@ -15,11 +14,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
         integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/jquery.vmap.world.js"
+        charset="utf-8"></script>
+    <script src="script.js"></script>
     <title>Document</title>
-    
+    <style>
+        .disabled-country {
+            cursor: default;
+        }
+    </style>
 </head>
 
 <body>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script>
@@ -308,6 +318,12 @@
                         <p class="sidebar-title">Nhiệm vụ</p>
                     </a>
                 </div>
+                <div id="tg" class="sidebar-list-item">
+                    <a class="sidebar-list-item-link">
+                        <i class="sidebar-icon fas fa-history"></i>
+                        <p class="sidebar-title">Thế giới</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div id="content" class="content content0">
@@ -398,6 +414,174 @@
                                         <div class=""><i class="center-star far fa-star"></i></div>
                                     </td>
                                     <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Đã được bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Xin chào bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Vui lòng bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Vui lòng bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Thông báo bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Vui lòng bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Hoàn thành bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
+                                    <td class="table-list4">Sắp xếp bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Gmail</td>
                                     <td class="table-list4">Bật hoặc tắt thông báo Gmail
                                         Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
                                         bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
@@ -441,6 +625,174 @@
                                         <div class=""><i class="center-star far fa-star"></i></div>
                                     </td>
                                     <td class="table-list3">Tranngoctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Tranngoctuyen1</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">10Tranngoctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">goctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Ngocanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">100Ngocanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Bancanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Nguyenhuudat</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Edison_1003</td>
                                     <td class="table-list4">Bật hoặc tắt thông báo Gmail
                                         Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
                                         bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
@@ -518,6 +870,174 @@
                                 <th></th>
                             </thead>
                             <tbody>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Tranngoctuyen1</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">10Tranngoctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">goctuyen</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Ngocanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">100Ngocanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Bancanh</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Nguyenhuudat</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="hover-tr">
+                                    <td class="table-list1">
+                                        <div class=""><i class="far fa-square"></i></div>
+                                    </td>
+                                    <td class="table-list2">
+                                        <div class=""><i class="center-star far fa-star"></i></div>
+                                    </td>
+                                    <td class="table-list3">Edison_1003</td>
+                                    <td class="table-list4">Bật hoặc tắt thông báo Gmail
+                                        Bạn có thể nhận được thông báo email trên Google Chrome, Firefox hoặc Safari khi
+                                        bạn đã đăng nhập vào Gmail và để ứng dụng mở trong trình duyệt của mình
+                                    </td>
+                                    <td class="table-list5"><span class="table-list5t">10/11/1021</span>
+                                        <div class="table-list5i">
+                                            <i class="padding-i fas fa-download"></i>
+                                            <i class="padding-i far fa-trash-alt"></i>
+                                            <i class="padding-i far fa-envelope"></i>
+                                            <i class="padding-i far fa-clock"></i>
+                                        </div>
+                                    </td>
+                                </tr>
                                 <tr class="hover-tr">
                                     <td class="table-list1">
                                         <div class=""><i class="far fa-square"></i></div>
@@ -715,6 +1235,205 @@
                                 </td>
                                 </td>
                             </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Alex sander</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    New York-USA
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Totora</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    Tokyo-Japan
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Nicolai Taika</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    Rusian
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Blacori Dak</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    Kulalumbua-Indonesia
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-user1">
+                                    <div class="">Trần Ngọc Tuyền</div>
+                                </td>
+                                <td class="table-user2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-user3">0972612200</td>
+                                <td class="table-user4">
+                                    Quản lý Tin nhắn
+                                </td>
+                                <td class="table-user5">
+                                    NT0972612200
+                                </td>
+                                <td class="table-user6">
+                                    Hà Nội-Việt Nam
+                                </td>
+                                <td class="table-user7">
+                                    0972612200tuyen@gmail.com
+                                </td>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -783,6 +1502,7 @@
             </div>
         </div>
     </div>
+
     <div id="content" class="content content4">
         <div class="gird wide ">
             <p class="title-content">Nhiệm vụ</p>
@@ -814,12 +1534,52 @@
                             </tr>
                             <tr class="hover-tr">
                                 <td class="table-nv1">
-                                    <div class="">Thêm và phát triển tính năng chat trực tuyến</div>
+                                    <div class="">Phần mềm up load ảnh </div>
                                 </td>
                                 <td class="table-nv2">
                                     <div class="">10/12/2000</i></div>
                                 </td>
-                                <td class="table-nv3">SaZuke HonDa</td>
+                                <td class="table-nv3">Hanh Ngan </td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Phần mềm up load ảnh </div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">Hanh Ngan </td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Phần mềm up load ảnh </div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">Hanh Ngan </td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Phần mềm up load ảnh </div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">Hanh Ngan </td>
+                                <td class="table-nv4">Chưa xong</td>
+                            </tr>
+                            <tr class="hover-tr">
+                                <td class="table-nv1">
+                                    <div class="">Nhận diện khuôn mặt</div>
+                                </td>
+                                <td class="table-nv2">
+                                    <div class="">10/12/2000</i></div>
+                                </td>
+                                <td class="table-nv3">Juster Bufflobeo</td>
                                 <td class="table-nv4">Chưa xong</td>
                             </tr>
                             <tr class="hover-tr">
@@ -888,6 +1648,7 @@
             </div>
         </div>
     </div>
+    
     <div id="editer-1" class="editer-1">
         <form action="'">
             <div id="btn-x" class="btn-x"><i class="icon-x fas fa-times"></i></div>
@@ -935,20 +1696,6 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
-    </script>
-    <script>
-        jQuery('#vmap').vectorMap({
-            map: 'world_en',
-            backgroundColor: #fff,
-            color: '#ffffff',
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: False,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: ['#C8EEFF', '#006491'],
-            normalizeFunction: 'polynomial'
-        });
     </script>
 
 

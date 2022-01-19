@@ -655,6 +655,8 @@ table.dataTable{
 }
 
 .btn-x{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     height: 30px;
     background-color: red;
     display: flex;
@@ -684,6 +686,7 @@ table.dataTable{
     display: none;
 }
 .ct-box{
+    margin-top: 55px;
     position: relative;
     border-radius: 20px;
     height: 500px;
@@ -946,7 +949,7 @@ table.dataTable{
 .tb-list{
     box-shadow: 1px 1px 1px 1px #f1f1f1;
     border-radius: 5px ;
-    border: 3px solid #f1f1f1;
+    border: 1px solid #000;
 }
 
 .tb-list-item-link{
@@ -959,5 +962,5 @@ table.dataTable{
 .tb-list2{
     box-shadow: 1px 1px 1px 1px #f1f1f1;
     border-radius: 20px ;
-    border: 3px solid #f1f1f1;
+    border: 1px solid #000;
 }

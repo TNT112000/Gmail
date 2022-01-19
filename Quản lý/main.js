@@ -111,6 +111,14 @@ document.getElementById('nv').addEventListener("click", function () {
     }
 })
 
+document.getElementById('tg').addEventListener("click", function () {
+    var content = document.getElementsByClassName("content");
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+        content[7].style.display = "block";
+    }
+})
+
 // Biểu đồ doanh thu năm
 
 const labels = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',];
@@ -184,3 +192,4 @@ const myChart1 = new Chart(
     Element1,
     config1
 );
+
