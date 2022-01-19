@@ -111,13 +111,7 @@ document.getElementById('nv').addEventListener("click", function () {
     }
 })
 
-document.getElementById('tg').addEventListener("click", function () {
-    var content = document.getElementsByClassName("content");
-    for (var i = 0; i < content.length; i++) {
-        content[i].style.display = "none";
-        content[7].style.display = "block";
-    }
-})
+
 
 // Biểu đồ doanh thu năm
 
