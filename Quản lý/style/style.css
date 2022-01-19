@@ -429,7 +429,8 @@
     
 }
 .table-list3{
-    width: 210px;
+    max-width: 170px;
+    width: 170px;
 }
 .table-list4{
     width: 740px;
@@ -508,9 +509,7 @@ table.dataTable{
     padding: 5px !important;
     text-align: center;
 }
-.header-logo-hover{
 
-}
 .tb-list{
     position: absolute;
     z-index: 100;
@@ -522,8 +521,10 @@ table.dataTable{
     right: 10px;
     overflow:auto;
     display: none;
+    
 }
 .tb-list-item-link{
+    
     height: 50px;
     font-size: 15px;
     padding: 5px;
@@ -582,6 +583,7 @@ table.dataTable{
     right: 10px;
     overflow:auto;
     border: 1px solid;
+    border-radius: 20px;
 }
 
 .icons-ud{
@@ -684,6 +686,8 @@ table.dataTable{
     border-radius: 20px;
     height: 500px;
     border: 1px solid red;
+    background-color: red;
+    color: white;
 }
 
 .title-item-nv{
@@ -722,10 +726,10 @@ table.dataTable{
     position: absolute;
     padding: 10px 20px;
     font-size: 18px;
-    color: white;
-    background-color: red;
+    color: red;
+    background-color: white;
     border-radius: 10px;
-    border: red;
+    border: white;
     bottom: 30px;
     right: 50%;
     text-align: center;
@@ -737,12 +741,188 @@ table.dataTable{
     position: absolute;
     padding: 10px 20px;
     font-size: 18px;
-    color: white;
-    background-color: red;
+    color: red;
+    background-color: white;
     border-radius: 10px;
-    border: red;
+    border: white;
     bottom: 30px;
     left: 50%;
     text-align: center;
     margin: 0 10px;
+}
+
+.mySlides1{
+    width: 350px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mySlides2{
+    width: 350px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mySlides3{
+    width: 350px;
+    height: 200px;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mySlides4{
+    width: 350px;
+    height: 200px;
+    background-color: purple;
+    color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slideshow-container{
+    margin-top: 35px;
+    width: 350px;
+}
+.content-slider{
+    margin: 10px 0;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,.next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next1,
+    .text {
+        font-size: 11px
+    }
+}
+
+.dataTables_wrapper{
+    padding: 20px 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px 1px #f1f1f1;
+    border: 1px solid #f1f1f1;
 }
